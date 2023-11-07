@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets | Constanza Rojas</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header class="fuente">
+
+        <div class="position-relative">
+            <div class="container-fluid position-absolute top-0 start-0 px-0">
+
+                <nav
+                    class="contenedorNav navbar navbar-expand-lg navbar-dark bg-dark h-100 d-flex f justify-content-between ">
+                    <div class="container-fluid divContainerNav ">
+                        <a class="navbar-brand tamañoLogo " href="../index.html"> <img class=" tamañoLogo"
+                                src="../assets/imagen/codoacodo.png" alt="">
+                            Conf Bs As
+                        </a>
+                        <!--
+                        <p class="colorWhite">Conf Bs As</p>-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-0">
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link active fs-5 " aria-current="page" href="#">Conf Bs As</a>
+                                </li>-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">La conferencia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html#oradores">Los oradores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html#lugarFecha">El lugar y la fecha</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html#formularioOrador">Conviértete en orador</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link itemComprarTickets" href="#comprarTickets">Comprar tickets</a>
+                                </li>
+                                <ul class="dropdown-menu" aria-l abelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main clase=container>
+        <div class="contenedorTarjetas  ">
+            <div class="row  filaTarjetas">
+                <div class="col-12 col-md-4 columnasTarjetas tarjetaEstudiante ">
+                    <h2 class="tarjetasH2">Estudiante</h2>
+                    <h3 class="tarjetasH3">Tienen un descuento</h3>
+                    <h3 class="tarjetasH3 tarjetasH3Descuento">80%</h3>
+                    <p class="tarjetaP">* presentar documentación</p>
+                </div>
+                <div class="col-12 col-md-4 columnasTarjetas tarjetaTrainee">
+                    <h2 class="tarjetasH2">Trainee</h2>
+                    <h3 class="tarjetasH3">Tienen un descuento</h3>
+                    <h3 class="tarjetasH3 tarjetasH3Descuento">50%</h3>
+                    <p class="tarjetaP">* presentar documentación</p>
+                </div>
+                <div class="col-12 col-md-4 columnasTarjetas tarjetaJunior">
+                    <h2 class="tarjetasH2">Junior</h2>
+                    <h3 class="tarjetasH3">Tienen un descuento</h3>
+                    <h3 class="tarjetasH3 tarjetasH3Descuento">15%</h3>
+                    <p class="tarjetaP">* presentar documentación</p>
+                </div>
+            </div>
+        </div>
+        <div class="container containerTickets" id="comprarTickets">
+            <div>
+                <div class="text-center pt-1">
+                    <div class=" fw-normal tamañoInput">
+                        <h2 class="tamañoFuenteTicket">VENTA</h2>
+                    </div>
+                    <h2 class="fs-2 ">VALOR DE TICKETS $200</h2>
+                </div>
+            </div>
+            <form class="row anchoFila form-control-md" id="formularioTickets" action="">
+                <div class="col-12 col-md-6  tamañoInputForm ">
+                    <input class="form-control " type="text" id="nombre" aria-label="nombre" placeholder="Nombre"
+                        required>
+                    <div id="mensajeErrorNombre" class="invalid-feedback">
+                        <p>Por favor, ingrese su nombre!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  tamañoInputForm ">
+                    <input class="form-control " type="text" id="apellido" aria-label="apellido" placeholder="Apellido"
+                        required>
+                    <div id="mensajeErrorApellido" class="invalid-feedback">
+                        <p>Por favor, ingrese su nombre!</p>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <input class="form-control " type="email" id="mail" aria-label="email" placeholder="Email" required>
+                    <div id="mensajeErrorEmail" class="invalid-feedback ">
+                        <p>Por favor, ingrese su email!</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-2 divInputInf">
+                    <label for="cantidadTickets" class="form-label">Cantidad</label>
+                    <input class="form-control" type="number" id="cantidadTickets" aria-label="cantidad"
+                        placeholder="Cantidad" min="1" required>
+                    <div id="mensajeErrorCantidadTickets" class="invalid-feedback">
+                        <p>Por favor, ingrese la cantidad de tickets!</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-2 divInputInf">
+                    <label for="categoria" class="form-label">Categoria</label>
+                    <select class="form-select h-0.5rem " id="categoria" aria-label="categoria">
+                        <option value="" selected>--Seleccione--</option>
+                        <option value="0">Sin categoria</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                    <div id="mensajeErrorCategoria" class=" divCategoriaForm invalid-feedback">
+                        <p>Por favor, seleccione la categoria!</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-primary col-11 mt-2 mb-2 divSpanForm" role="alert">
+                    Total a Pagar: $ <span id="totalPago"></span>
+
+                </div>
+                <div class="col-12 col-md-6 mb-3 pb-3">
+                    <button class="btn colorBtnForm " type="reset" id="btnBorrar">Borrar</button>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3 pb-3">
+                    <button class="btn colorBtnForm" type="button" id="btnResumen">Resumen</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tickets.js"></script>
+    <footer class="bg-gradiente footer">
+        <nav class="container-fluid fs-6 text-center containerNav  ">
+            <ul class="ul row justify-content-center align-items-center ">
+                <li class="col-4 col-md-1 text-center p-3  linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Preguntas frecuentes</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Contáctanos</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Prensa</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Conferencias</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Términos y condiciones</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Privacidad</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
