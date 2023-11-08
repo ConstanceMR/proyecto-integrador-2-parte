@@ -63,7 +63,7 @@
 }
 .contenedorTextoConf {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 30%;
     width: 100%;
 }
 .alturaContenedor {
@@ -155,6 +155,9 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
+.divAncla{
+    text-align: center;
+}
 .h2 {
     font-weight: 500;
     font-size: 2rem;
@@ -174,7 +177,7 @@
     border: 1px solid rgb(243, 236, 236);
     border-radius: 3px;
     padding: 4px;
-    margin: 40%
+    
 }
 .footer {
     background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
@@ -212,9 +215,12 @@
     width: 100%;
 }
 .contenedorTarjetas {
-    height: 135vh;
+    height: 100%;
     width: 100%;
-    padding-top: 20%;     
+    padding-top: 20%;   
+    justify-content: center;
+    align-items: center;
+     
 }
 .filaTarjetas{
     padding: 1rem;
@@ -258,9 +264,16 @@
     color: gray;
    font-size: 1rem; 
 }
+.containerTickets{
+    width: 50vh;
+    justify-content: center;
+    align-items: center;
+    
+}
 .anchoFila {
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 .tamañoInputForm{
   width: 100%;
@@ -284,6 +297,10 @@
 .divBloque{
     display: block;
 }
+.containerMain{
+    width: 100%;
+    align-items: center;
+}
 
 @media screen and (min-width: 768px) {
     .navbar-nav {
@@ -298,7 +315,7 @@
         margin-left: 0;
         font-size: 1rem;
         margin-left: 50%;
-
+        padding-top: 20%;
     }
     .tituloConf {
         font-size: 2rem;
@@ -414,12 +431,12 @@
     }
     .p {
         font-weight: 400;
-        font-size: 12px;
+        font-size: 0.76rem;
         line-height: 1.5rem;
     }
     .divAncla {
         position: relative;
-        right: 257px;
+        right: 44%;
     }
     .tamañoConteiner {
         height: 20vh;
@@ -502,8 +519,6 @@
         width: 850px;
         align-items: center;
         justify-content: center;
-        
-        
     }
     .anchoFila{
         height: 90%;
@@ -511,7 +526,6 @@
         width: 100vh;
         width: 90%;
         align-items: center;
-       
     }
     .tamañoFuenteTicket{
         font-size: 1rem;
@@ -521,7 +535,6 @@
     .divSpanForm {
         width: 95%;
     }
-  
     .tamañoInputForm {
         width: 50%;
        align-items: center;
